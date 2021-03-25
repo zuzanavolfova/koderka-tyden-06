@@ -1,0 +1,42 @@
+/* intuitivnejsi box siying */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	margin: 20px;
+	font: 16px/1.5 sans-serif ;
+}
+
+/* ------------------------- */
+
+
+form {
+	width: 300px;
+}
+
+.form-field {
+	margin-bottom: 10px;
+}
+
+.form-field label {
+	display: block;
+	font-size: 14px;
+	color: gray;
+}
+
+.form-field input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid silver;
+	border-radius: 4px;
+}
+
+.button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
+	background-color: #2ecc71;
+	border: 0;
+	border-radius: 4px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulářové prvky</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Formulářové prvky</h1>
+
+	<!--
+		Formulář
+		action: adresa, kam se odesílají data
+		method: jakým způsobem se odesílají
+			- GET: jako součást adresy, omezené množství dat (max 2048 znaků)
+			- POST: "skrytě", bez omezení velikosti
+
+		Zkusíme formulář odesílat na adresu:
+		http://formular.itgirls.cz
+	-->
+
+
+
+		<!--
+			INPUT
+			type="text" ... jde o textové pole, existují i další typy
+			name: název pole pro zpracování na serveru
+			id: jedinečný identifikátor pro popis pole, javascript, apod.
+			value: výchozí hodnota
+			size: velikost textového pole, cca počet znaků (ale jde zadat víc)
+			maxlength: max. délka, která jde zadat
+			placeholder: nápověda, když je pole prázdné
+			autofocus ... automaticky se "zaostří" při načtení stránky
+			disabled  ... vypnuté pole (neodesílá se na server)
+			readonly  ... jen pro čtení, nejde do něj psát, ale hodnota se odešle na server
+			required  ... povinné pole, kontroluje prohlížeč při pokusu o odeslání
+		-->
+
+
+
+		<!--
+			LABEL - popisek formulářového pole
+			for: id formulářového prvku, pro který je toto popisek
+		-->
+
+
+
+		<!--
+			Tlačítko - lze vytvořit dvěma způsoby
+			1) <input type="submit" value="OK">
+			2) <button>OK<button>
+
+			Ať už <input> nebo <button> s type="submit" je výchozí tlačítko,
+			které se "stiskne" a odešle formulář, když kdekoliv ve formuláři
+			stiskneme klávesu Enter.
+
+			U <input> je text na tlačítku v atributu value="...".
+			U <button>...</button> je text na tlačítku mezi značkami, mohou tam být i obrázky, apod.
+
+			Atributy INPUT/BUTTON:
+			type: "button", "submit", "reset"
+			name: nazev tlačítka pro zpracování na serveru
+			id: jedinečný identifikátor pro HTML/JavaScript
+			disabled ... vypnuté tlačítko
+
+			Jen pro INPUT:
+			value: text na tlačítku
+		-->
+
+
+
+		<!--
+			Další typy vstupních polí:
+			<input type="xxx">, kde "xxx" určuje typ pole
+		-->
+
+		<!--
+			NUMBER - číslo
+			Další atributy: min, max, step
+		-->
+
+
+		<!--
+			EMAIL - emailová adresa
+			URL - webová adresa
+		-->
+
+
+		<!--
+			TEL - telefonní číslo
+			Občas se používá záměrně "nesprávně" pro zadávání čísel,
+			protože na mobilu většinou zobrazí klávesnici pouze s číslicemi 0-9.
+		-->
+
+
+		<!--
+			DATE - datum
+			DATETIME-LOCAL - datum a čas
+		-->
+
+
+		<!--
+			PASSWORD - heslo
+			zobrazuje hvězdičky místo textu
+		-->
+
+
+		<!--
+			HIDDEN - skryté pole
+			Jeho hodnota value="..." se odesílá na server,
+			ale pole na stránce není vidět.
+		-->
+
+
+
+
+		<!--
+			TEXTAREA - víceřádkové textové pole
+			name: nazev ple pro zpracování na serveru
+			id: jedinečný identifikátor pro label nebo třeba JavaScript
+			rows: počet zobrazených řádků (ale do pole lze zadat víc)
+			cols: počet písmen na řádek
+			maxlength: max. počet znaků, která jdou zadat
+		 -->
+
+
+
+		<!--
+			CHECKBOX - zaškrtávácí políčko
+			<input type="checkbox">
+			name: název pole pro zpracování na serveru
+			id: jedinečný identifikátor pro label nebo třeba JavaScript
+			value: hodnota, která se při zaškrtnutí odešle na server
+			checked ... pokud atribut existuje, je pole zaškrtnuté
+			disabled, required
+		-->
+
+
+
+		<!--
+			RADIO - přepínače (jen jeden ze skupiny může být vybraný)
+			<input type="radio">
+
+			name: název pole pro zpracování na serveru
+			↑↑↑ všechny přepínače ve skupině mají stejnou hodnotu name
+
+			id: jedinečný identifikátor pro label nebo třeba JavaScript
+			↑↑↑ každý radiobutton ve skupině má vlastní
+
+			value: hodnota, která se při zaškrtnutí odešle na server
+			checked ... pokud atribut existuje, je pole zaškrtnuté
+			disabled, required
+		-->
+
+
+
+
+
+		<!--
+			SELECT - roletka, výběr z možností
+			<select>
+				<option>...</option>
+			</select>
+
+			Atributy select:
+			name: název pole pro zpracování na serveru
+			id: jedinečný identifikátor pro label nebo třeba JavaScript
+			disabled, required
+
+			Atributy option:
+			value: hodnota, která se při výběru odešle na server
+			selected ... výchozí vybraná hodnota
+		-->
+
+
+
+
+		<!--
+			FIELDSET - seskupení polí formuláře
+			<fieldset>
+				<legend>...</legend>
+			</fieldset>
+		-->
+
+
+
+
+</body>
+</html>

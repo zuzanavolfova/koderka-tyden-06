@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Napojení formuláře na službu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!--
+		Vytvoříme formulář, který napojíme na službu pro zpracování formulářů.
+
+		V tomto příkladu použijeme https://formspark.io/
+
+		FormSpark umožňuje 250 odeslání zdarma,
+		další se musí platit ($25 za 50.000 odeslání, cca 600 Kč).
+
+		Služeb na zpracování formulářů je spousta. V žádném případě nepropagujeme
+		zrovna FormSpark. Je to pouze jedna z mnoha služeb podobného typu,
+		kterou jsme vybrali pro tuto praktickou ukázku.
+
+		Postup:
+		1) Vytvoř si účet na formspark.io
+		2) Přihlaš se
+		3) Vytvoř nový formulář - stačí zadat pouze jeho název
+		4) V detailu formuláře najdeš na záložce "How to" adresu,
+			 na kterou budeš svůj formulář odesílat.
+		5) Vytvoř si libovolný HTML formulář a splň následující podmínky:
+			 - každé pole musí mít atribut name="..."
+			 - formulář musit obsahovat jeden <button type="submit">
+
+		To je vše. Při odeslání formuláře se ti data uloží do databáze FormSpark
+		a zároveň ti přijde vyplněný formulář emailem.
+	-->
+
+	<form class="newsletter" action="" method="post">
+
+		<h1>Newsletter</h1>
+
+		<div class="form-field">
+			<label for="jmeno">Jméno *</label>
+			<input type="text" name="jmeno" id="jmeno" required>
+		</div>
+
+		<div class="form-field">
+			<label for="email">E-mail *</label>
+			<input type="email" name="email" id="email" required>
+		</div>
+
+		<button class="button" type="submit">Odebírat newsletter</button>
+
+	</form>
+
+</body>
+</html>
