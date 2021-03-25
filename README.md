@@ -2,10 +2,15 @@
 
 Toto jsou podklady pro video lekce pro 6. týden online kurzu Staň se kóderkou od Czechitas.
 
-Tento týden se budeme zabývat výhradně tvorbou formulářů. Nezní to moc zábavně, ale je to extrémně užitečné. Budeme se věnovat těmto oblastem:
+Tento týden se budemě věnovat těmto oblastem:
 - Vytváření formulářů v HTML
 - Stalování formulářů v CSS
 - Zpracování formulářů na serveru, napojení našeho formuláře na externí službu
+
+Abychom vyvážili formulářovou "nudu", přidáme si k tomu ještě:
+- Grafické formáty na webu a jak s nimi pracovat
+- SVG pro vektorovou grafiku
+
 
 ## Stažení podkladů
 

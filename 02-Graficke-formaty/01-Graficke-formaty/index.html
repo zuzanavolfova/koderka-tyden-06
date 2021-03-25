@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grafika</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!--
+
+		BITMAPY vs. VEKTORY
+		-------------------
+
+		Tzv. bitmapové obrázky formáty, které v nějaké podobě uchovávají informace o tom, jak je barevný každý pixel v obrázku. Používáme typicky na fotky.
+		Při zvětšení nad originánlní velikost jsou fotky neostré, rozmazané, kostičkované.
+		- Adobe Photoshop
+		- Gimp - https://www.gimp.org/
+
+		Vektorové formáty neuchovávají informace o pixelech, ale ukládají matematický popis křivek a tvarů, ze kterých je obrázek tvořen. Používají se na loga, ikony, ilustrace a grafiku podobného typu.
+		Vektorovou grafiku lze libovolně zvětšovat nebo zmenšovat bez ztráty kvality.
+		- Adobe Illustrator
+		- Inkscape - https://inkscape.org/cs/
+
+
+		GRAFICKÉ FORMÁTY
+		----------------
+
+		JPEG (bitmapový formát)
+		Nejběžnější formát. Ztrátová komprese - čím menší datový objem chceme, tím nížší je kvalita obrázku. Ve fotce jsou tzv. artefakty.
+		Hodí se na fotky. Nehodí se na ilustrace, čárovou grafiku, obrázky s textem.
+		Neumí průhlednost.
+
+		GIF (bitmapový formát)
+		Starý, indexované barvy (max. 256), nehodí se na fotky.
+		Umí průhlednost, ale pouze 1-bitovou (tzn. pixel je buď zcela průhledný nebo ne).
+		Animované GIFy.
+
+		PNG (bitmapový formát)
+		Podobný GIFu, ale modernější.
+		Jde o bezztrátovou kompresi, tj. obrázek se nekazí, ale zase je o hodně větší než běžný JPEG.
+		Používáme na grafiku typu logo (pokud nemáme vektorovou verzi, viz dále), ilustrace, apod. Nepoužíváme na fotky = obrovské soubory.
+		Umí 8-bitovou průhlednost (256 úroví průhlednosti), tj. umí poloprůhledné pixely.
+		Používáme, hlavně když potřebujeme průhlednou bitmapu.
+
+		WebP (bitmapový formát)
+		Oproti JPG nebo PNG je průměrná datová úspora cca 30-50%.
+		Umí i průhlednost jako PNG.
+		Formát existuje již mnoho let, ale stále pro něj chybí podpora v Safari (Apple zařízení), takže je nutné při použití používat i fallback na JPG/PNG.
+
+		<picture>
+			<source srcset="images/logo/logo.webp" type="image/webp">
+			<img src="images/logo/logo.png" alt="…">
+		</picture>
+
+		SVG
+		Vektorový formát.
+		Ideální na loga, ikony, ilustrace, technickou grafiku, schémata.
+
+	-->
+
+
+
+</body>
+</html>
