@@ -21,6 +21,7 @@
 		http://formular.itgirls.cz
 	-->
 
+	<form method="get" action="http://formular.itgirls.cz">
 
 
 		<!--
@@ -37,6 +38,17 @@
 			readonly  ... jen pro čtení, nejde do něj psát, ale hodnota se odešle na server
 			required  ... povinné pole, kontroluje prohlížeč při pokusu o odeslání
 		-->
+		
+		<label>
+			Jmeno
+			<input type="text"
+				name="jmeno"
+				id="jmeno"
+				size="15"
+				maxlength="15"
+				placeholder="Křestní jméno">
+		</label>
+
 
 
 
@@ -68,6 +80,9 @@
 			Jen pro INPUT:
 			value: text na tlačítku
 		-->
+<!-- <input type="submit" value="odeslat"> -->
+
+<button type="submit"> Odeslat</button>
 
 
 
@@ -185,7 +200,7 @@
 		-->
 
 
-
+</form>
 
 </body>
 </html>

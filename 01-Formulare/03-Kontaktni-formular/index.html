@@ -8,6 +8,38 @@
 </head>
 <body>
 
+<h1>Kontaktní formulář</h1>
+
+<form method="post" action="http://formular.itgirls.cz">
+	<div class="form-field">
+		<label for="jmenoAprijmeni">Jméno a příjmení *</label>
+		<input type="text" name="jmenoAprijmeni" id="jmenoAprijmeni" required>
+		
+		<label for="email">E-mail *</label>
+		<input type="email" name="email" id="email" required>
+		
+		<label for="telefon">Telefon</label>
+		<input type="tel" name="telefon" id="telefon">
+		<label for="dotaz">Čeho se týká Váš dotaz</label>
+		<select>
+			<option></option>
+			<option>Dotaz na produkt</option>
+			<option>Dotaz na objednávku</option>
+			<option>Reklamace</option>
+		</select>
+
+		<label for="zprava">Zpráva</label>
+		<textarea name="zprava" id="zprava" rows="7"></textarea>
+		
+		<div class="horizontal">
+		<input type="checkbox" name="checkbox" id="checkbox">
+		<label for="checkbox">zavolejte mi zpět</label>
+		</div>
+		
+		<input type="submit" name="submit" id="submit" value="Odeslat">
+	</div>
+
+</form>
 	<!--
 		Vytvoř formulář podle obrázku zadani-ukolu.png.
 		Pole pro jméno a e-mail jsou povinná.

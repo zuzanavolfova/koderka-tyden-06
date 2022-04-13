@@ -7,5 +7,57 @@ body {
 	font: 16px/1.5 sans-serif ;
 }
 
+/* .form-field {
+	width: 400px;
+} */
+
+h1 {
+	color: dodgerblue;
+	font-size: 34px;
+}
+.form-field label {
+	display: block;
+	color:rgb(107, 107, 107);
+	margin-top: 20px;
+}
+
+.form-field input[type='checkbox'] {
+	display:flex;
+}
+
+.form-field input[type='text'],
+.form-field input[type='tel'],
+.form-field input[type='email'],
+.form-field select,
+.form-field textarea {
+	width: 400px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+padding: 10px;
+font-size: 16px;
+}
+
+.form-field input[type='submit'] {
+	color: white;
+	background-color: dodgerblue;
+	border: 0;
+	margin-top: 20px;
+}
+
+.horizontal {
+	margin-top: 20px;
+	display: flex;
+align-items: center;
+}
+
+.horizontal label {
+	margin: 0;
+	color: rgb(53, 52, 52);
+}
+
+
 /* ------------------------- */
 

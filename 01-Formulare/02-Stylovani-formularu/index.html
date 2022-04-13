@@ -10,12 +10,52 @@
 
 	<h1>Stylování formulářů</h1>
 
-
+<form action="adresa serveru.cz">
 	<!-- Label a pole pod sebou -->
+	<div class="form-field">
+		<label for="jmeno">Jmeno</label>
+		<input type="text" name="jmeno" id="jmeno">
 
+		<label for="prijmeni">Příjmení<span class="required">*</span></label>
+		<input type="text" name="prijmeni" id="prijmeni" required>
 
+		<button>Odeslat</button>
+	</div>
+
+	<div class="form-field">
+		<label for="adresa">Adresa</label>
+		<textarea name="adresa" id="adresa" rows="5"></textarea>
+	</div>
+
+	<div class="form-checkbox">
+		<input type="checkbox" name="checkbox" id="checkbox" value="ano">
+		<label for="checkbox">Souhlasim</label>
+	</div>
+<label class="form-field">Oblibene ovoce</label>
+
+	<div class="form-radio">
+	<input type="radio" name="ovoce" id="jahoda" value="1">
+	<label for="jahoda">jahoda</label></div>
+
+	<div class="form-radio">
+	<input type="radio" name="ovoce" id="jablko" value="1">
+	<label for="jablko">jablko</label></div>
+
+	<div class="form-radio"><input type="radio" name="ovoce" id="hruska" value="1">
+	<label for="hruska">hruska</label></div>
 
 	<!-- Label a pole vedle sebe -->
+<div class="form-horizontal">
+	<label for="prezdivka">Prezdivka</label>
+	<input type="text" name="prezdivka" id="prezdivka">
+</div>
+
+<div class="form-horizontal">
+	<label for="vek">Vek</label>
+	<input type="number" name="vek" id="vek">
+
+</div>
+
 
 
 
@@ -50,6 +90,6 @@
 		- :focus, :valid, :invalid, :placeholder-shown
 	-->
 
-
+</form>
 </body>
 </html>
