@@ -8,9 +8,13 @@
 </head>
 <body>
 <div class="prihlasovaciFormular">
+	<div class="hlavickaFormular">
 	
-	<h1>Přihlášení</h1>
-	<form method="post" action="http://formular.itgirls.cz">
+		<h1>Přihlášení</h1>
+	</div>
+	
+	<div class="prihlaseni">
+		<form method="post" action="http://formular.itgirls.cz">
 
 		<label for="email">E-mail</label>
 		<input type="email" name="email" id="email">
@@ -19,10 +23,14 @@
 		<input type="password" name="password" id="password">
 
 		<input type="submit" value="Přihlásit se">
+		
+		<div class="zapomenuteHeslo">
+			<a href="#">Zapomenuté heslo?</a>
+		</div>
 
-		<a href="#">Zapomenuté heslo</a>
+		</form>
+	</div>
 
-	</form>
 </div>
 		<!--
 		Vytvoř přihlašovací formulář podle obrázku zadani-ukolu.png.

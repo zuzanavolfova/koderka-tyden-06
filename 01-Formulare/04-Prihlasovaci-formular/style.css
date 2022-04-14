@@ -7,6 +7,58 @@ body {
 	font: 16px/1.5 sans-serif ;
 	background-color: #e5e5e5;
 }
+.prihlasovaciFormular {
+	width: 300px;
+	margin: 30px auto;
+	border-radius: 10px;
+	background-color: white;
+}
+.hlavickaFormular {
+	background-color: #e74c3c;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px 10px 0 0;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 0;
+	font-weight: 100;
+}
+
+.prihlaseni {
+	padding: 0 20px 20px 20px;
+	color: rgb(93, 93, 93);
+}
+
+.prihlaseni label {
+	margin-top: 20px;
+	display: block;
+	font-size: 16px;
+}
+
+.prihlaseni input {
+	border-radius: 4px;
+	border: 1px solid rgb(93, 93, 93);
+	width: 100%;
+	padding: 10px;
+}
+
+.prihlaseni input[type="submit"] {
+	background-color: #2ecc71;
+	color: white;
+	font-size: 16px;
+	border: none;
+	margin-top:10px
+}
+
+.prihlaseni a {
+	font-size: 13px; 
+	display: inline-block;
+}
+.zapomenuteHeslo {
+	text-align: center;
+}
 
 /* ------------------------- */
 
